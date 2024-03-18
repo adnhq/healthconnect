@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+          <div class="logo">
+              <i class="fas fa-plus-square"></i>
+              <span><span class="connect">Health</span>Connect</span>
+          </div>
+          <ul>
+              <li><a href="#">Doctors</a></li>
+              <li><a href="#">Appointments</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" id="login-link">Login</a></li>
+              <li><a href="#" id="signup-link">Sign up</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <main>
+      <section class="signup-section">
+        <h1>Sign Up</h1>
+        <div class="toggle-container">
+          <span class="toggle-option active" data-toggle="patient">Patient</span>
+          <span class="toggle-option" data-toggle="doctor">Doctor</span>
+        </div>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="profile-image">Profile Image</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*">
+          </div>
+          <div class="form-group">
+            <label for="national-id">National ID</label>
+            <input type="text" id="national-id" name="national-id" required>
+          </div>
+          <div class="form-group patient-only">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group doctor-only">
+            <label for="hospital">Hospital</label>
+            <input type="text" id="hospital" name="hospital">
+          </div>
+          <div class="form-group doctor-only">
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" name="experience" min="0">
+          </div>
+          <div class="form-group doctor-only">
+            <label for="field">Field</label>
+            <select id="field" name="field">
+              <option value="Cardiologist">Cardiologist</option>
+              <option value="Dentist">Dentist</option>
+              <option value="Dermatologist">Dermatologist</option>
+              <option value="Neurologist">Neurologist</option>
+            </select>
+          </div>
+          <div class="form-group doctor-only">
+            <label for="qualifications">Qualifications</label>
+            <textarea id="qualifications" name="qualifications"></textarea>
+          </div>
+          <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 HealthConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
