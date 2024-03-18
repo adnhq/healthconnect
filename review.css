@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.review-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.review-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4caf50;
+}
+
+.rating-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.rating i {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rating i.active {
+  color: #ffc107;
+}
+
+.review-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-input textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review-input button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  align-self: flex-end;
+}
+
+.review-input button:hover {
+  background-color: #388e3c;
+}
